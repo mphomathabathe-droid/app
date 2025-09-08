@@ -15,26 +15,30 @@
 <body>
     <div class="Weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="enter a city .." required />
-            <input type="submit" value="search"/>
+        <form class="search-form">
+            <input type="search" placeholder="enter a city .." required class="search-form-input"/>
+            <input type="submit" value="search" class="search-form-button"/>
         </form>
     </header>
+    <div class="Weather-app-data">
     <main>
         <div>
-    <h1>
+    <h1 class="Weather-app-city">
         Paris
     </h1>
 
-    <P>
+    <P class="Weather-app-details">
 Tuesday 14:49, Scattered Clouds
 <br/>
-Humidity : 66%, Wind: 3.13km/h
+Humidity : <strong>66%</strong>, Wind:  <strong>3.13km/h</strong>
     </P>
     </div>
 
-<div>⛅ 12 °C </div>
-
+<div class="Weather-app-icon-temperature-container">
+<div class="Weather-app-icon">⛅</div>
+<div class="weather-app-temperature">12</div>
+     <div class="weather-app-unit">°C</div>
+</div>
     </main>
 
     <footer>
