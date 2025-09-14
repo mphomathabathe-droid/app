@@ -7,7 +7,7 @@ a{
 color: purple;
 }
 
-.weather-app{
+.Weather-app{
     background: white;
     max-width: 600px;
     margin: 45px auto;
@@ -46,7 +46,7 @@ main{
     padding: 30px 0;
 }
 
-.weather-app-city{
+.Weather-app-city{
     margin: 0;
     font-size: 30px;
     line-height: 48px;
@@ -79,7 +79,7 @@ margin-top: 40px;
 font-size: 16px;
 }
 
-.weather-app-temperature-container{
+.Weather-app-icon-temperature-container{
     display: flex;
     font-size: 88px;
 }
