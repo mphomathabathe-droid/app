@@ -1,11 +1,11 @@
 function refreshWeather (response){
-    let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = response.data.temperature.current;
-let  cityElement = document.querySelector("#city");
 
-    cityElement.innerHTML = response.data.city;
-    temperatureElement.innerHTML = Math.round(temperature);
-}
+let temperature = response.data.temperature.current;
+let temperatureElement = document.querySelector("#temperature");
+    let cityElement = document.querySelector("#city");
+ cityElement.innerHTML = response.data.city;
+  temperatureElement.innerHTML = Math.round(temperature);
+} 
 
 
 function searchCity(city){
@@ -19,9 +19,7 @@ axios.get(apiUrl).then(refreshWeather);
 function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-form-input");
-    let cityElement = document.querySelector("#city");
-    cityElement.innerHTML = searchInput.value;
-    searchCity(searchInput.value);
+    searchCity(searchInput.value); 
 }
 
 
